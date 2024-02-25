@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heygen - Socket - Front-End</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="size-full">
+      <section class="w-2/5 h-screen py-4 px-3 border-r flex gap-3 flex-col">
+        <h1 class="font-bold text-xl">HSA | Socket.io</h1>
+        <button
+          class="block w-full py-2 px-4 bg-green-500 text-white rounded-md disabled:bg-gray-200 disabled:text-black disabled:not-allowed"
+          id="new-session"
+        >
+          Create New Session
+        </button>
+        <button
+          class="block w-full py-2 px-4 bg-purple-500 text-white rounded-md disabled:bg-gray-200 disabled:text-black disabled:not-allowed"
+          id="start-session"
+          disabled="true"
+        >
+          Start Session
+        </button>
+      </section>
+      <section class=""></section>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
